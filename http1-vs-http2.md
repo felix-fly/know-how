@@ -16,7 +16,7 @@ OSI七层与TCP/IP五层网络架构
 
 ![TCP/IP](./images/tcp-ip.jpg)
 
-扩展阅读：[OSI七层与TCP/IP五层网络架构详解](http://network.51cto.com/art/201310/413853.htm)
+扩展阅读：[OSI七层与TCP/IP五层网络架构详解](http://network.51cto.com/art/201310/413853.htm)
 
 ### TCP三次握手
 
@@ -26,7 +26,7 @@ OSI七层与TCP/IP五层网络架构
 
 *ACK: acknowledgement 确认同步*
 
-## HTTP/1.0
+## HTTP/1.0
 由万维网协会 (World Wide Web Consortium) 和互联网工程工作小组 (Internet Engineering Task Force) 共同合作研究
 
 RFC 1945定义了HTTP/1.0，May 1996
@@ -91,7 +91,7 @@ HTTP/2 支持RFC7230中指明的HTPP/1.1的所有语义。这使得可以在不�
 
 [https://www.rfc-editor.org/rfc/pdfrfc/rfc7540.txt.pdf](https://www.rfc-editor.org/rfc/pdfrfc/rfc7540.txt.pdf)
 
-*为什么不是 HTTP/2.0 ? 不再使用小版本号。如果将来该协议需要被扩充更变，那么新的协议将会是HTTP/3。*
+*为什么不是 HTTP/2.0 ? 不再使用小版本号。如果将来该协议需要被扩充更变，那么新的协议将会是HTTP/3。*
 
 ### 多路复用流Multiplexed stream
 HTTP/2 是一个可以在同一个TCP/IP连接中同时发起多个request，接收多个response的复用协议。多路复用意味著来自很多流的数据包能够混合在一起通过同样连接传输，好比两列不同火车被拆分混合在一起传输，当到达终点时，它们又被拆开组成两列不同的火车。
@@ -106,7 +106,7 @@ HTTP/1.x 上如果一个只用一个持久链接，请求只能一个一个顺�
 
 ![google-http](./images/google-http.png)
 
-关于 QUIC [https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/](https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/)
+关于 QUIC [https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/](https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/)
 
 ### 优先权和依赖
 每个流都有自己的优先级别，会表明哪个流是最重要的，客户端会指定哪个流是最重要的，有一些依赖参数，这样一个流可以依赖另外一个流。
@@ -121,12 +121,12 @@ HTTP/2 为HTTP量身定制一个高效的压缩算法(HPACK)来避免使用TSL�
 ### 服务器端推
 客户端请求一个资源X，服务器端判断也许客户端还需要资源Z，在无需事先询问客户端情况下将资源Z推送到客户端，客户端接受到后，可以缓存起来以备后用。
 
-## 基于 HTTP/2 的优化
+## 基于 HTTP/2 的优化
 
-### HTTP/1.x 常用优化方法
+### HTTP/1.x 常用优化方法
 * Spriting（图片合并）
 
-    将多个小图片合并到一张大的图片里，这样多个小的请求就被合并成了一个大的图片请求。对于大量小图优化效果明显，缺点是增加开发复杂度。
+    将多个小图片合并到一张大的图片里，这样多个小的请求就被合并成了一个大的图片请求。对于大量小图优化效果明显，缺点是增加开发复杂度。
 
 * Inlining（内容内嵌）
 
@@ -138,13 +138,13 @@ HTTP/2 为HTTP量身定制一个高效的压缩算法(HPACK)来避免使用TSL�
 
 * Domain Sharding（域名分片）
 
-    将网页包含的资源分属于不同的域名下，使得浏览器可以同时发送更多的请求，减少等待时间。域名分片不是越多越好，因为DNS查询也会有一定的延迟。
+    将网页包含的资源分属于不同的域名下，使得浏览器可以同时发送更多的请求，减少等待时间。域名分片不是越多越好，因为DNS查询也会有一定的延迟。
 
 * CDN Content Delivery Network（内容分发网络）
 
     CDN是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。
 
-### HTTP/2 优化策略
+### HTTP/2 优化策略
 * 减少DNS查询。DNS查询需要时间，没有resolved的域名会阻塞请求。
 * 减少TCP连接。HTTP/2只使用一个TCP连接。
 * 压缩传输的数据。
