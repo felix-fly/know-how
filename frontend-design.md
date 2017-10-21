@@ -1,8 +1,14 @@
 # 前端设计
 
+### 互联网应用开发大前端的那些人和事。
+
 ![relative](./images/relative.png)
 
+### 前端开发UI设计图
+
 ![ui](./images/ui.jpg)
+
+### 前端开发中的UE/UX
 
 ![ue](./images/ue.png)
 
@@ -16,11 +22,11 @@
 
 ![normal menu](./images/normal-menu.gif)
 
-很明显的延迟，有木有？为什么呢？可以不要延迟吗？
+很明显的延迟，有木有？为什么呢？可以不要延迟吗？
 
 ![mouse-out](./images/mouse-out.gif)
 
-没有延迟的情况下，选择子菜单就有些困难。怎样才能完美解决？
+没有延迟的情况下，选择子菜单就有些困难。怎样才能完美解决？
 
 ![amazon design](./images/amazon-design.jpg)
 
@@ -40,7 +46,7 @@ jQuery插件——[jQuery-main-aim](https://github.com/kamens/jQuery-menu-aim)
 
 输入时自动下拉列出常用邮箱地址。
 
-### 银行卡号、手机号自动分割
+### 银行卡号、手机号自动分割
 
 ![bank number](./images/bank-number.png)
 
@@ -61,9 +67,9 @@ jQuery插件——[jQuery-main-aim](https://github.com/kamens/jQuery-menu-aim)
 * 错误使用颜色
 * 排版混乱
 * 滥用弹出窗口
-* 文字难于阅读，字体太小，与背景对比不够
-* 过度使用图像
-* 表单或流程太复杂
+* 文字难于阅读，字体太小，与背景对比不够
+* 过度使用图像
+* 表单或流程太复杂
 * 文案拼写错误
 * 缺少导航或者导航混乱
 
