@@ -13,7 +13,7 @@ HyperText Transfer Protocol over Secure Socket Layer 的简称。
 
 标准HTTP通信
 
-![communication-http](./images/communication-http.png)
+![communication-http](./images/communication-http.jpg)
 
 * 窃听风险(eavesdropping) - 第三方可以获知通信内容。窃取密码、个人信息
 * 篡改风险(tampering) - 第三方可以修改通信内容。流量劫持、广告植入
