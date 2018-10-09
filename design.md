@@ -2,33 +2,33 @@
 
 ### 互联网应用开发大前端的那些人和事。
 
-![relative](./images/relative.png)
+![relative](./images/design/relative.png)
 
 ### 前端开发UI设计图
 
-![ui](./images/ui.jpg)
+![ui](./images/design/ui.jpg)
 
 ### 前端开发中的UE/UX
 
-![ue](./images/ue.png)
+![ue](./images/design/ue.png)
 
 ## 优秀的设计
 
 ### Amazon下拉菜单
 
-![amazon](./images/amazon.gif)
+![amazon](./images/design/amazon.gif)
 
 有兴趣可以到[Amazon](https://www.amazon.com/)亲自体验一下。再来看一下普通的设计实现。
 
-![normal menu](./images/normal-menu.gif)
+![normal menu](./images/design/normal-menu.gif)
 
 很明显的延迟，有木有？为什么呢？可以不要延迟吗？
 
-![mouse-out](./images/mouse-out.gif)
+![mouse-out](./images/design/mouse-out.gif)
 
 没有延迟的情况下，选择子菜单就有些困难。怎样才能完美解决？
 
-![amazon design](./images/amazon-design.jpg)
+![amazon design](./images/design/amazon-design.jpg)
 
 鼠标光标从主菜单移向子菜单的时候，图中三角形区域会停止事件判定。
 
@@ -36,27 +36,27 @@ jQuery插件——[jQuery-main-aim](https://github.com/kamens/jQuery-menu-aim)
 
 ### Chrome iOS 笑脸标签
 
-![chrome ios](./images/chrome-ios.jpg)
+![chrome ios](./images/design/chrome-ios.jpg)
 
 当打开标签数超过99，数字标识会变成一个笑脸。
 
 ### 网易有道登录
 
-![note 163](./images/note-163.png)
+![note 163](./images/design/note-163.png)
 
 输入时自动下拉列出常用邮箱地址。
 
 ### 银行卡号、手机号自动分割
 
-![bank number](./images/bank-number.png)
+![bank number](./images/design/bank-number.png)
 
 ### 清空输入内容
 
-![clear input](./images/clear-input.png)
+![clear input](./images/design/clear-input.png)
 
 ### 更多优秀的设计期待你的加盟
 
-![go](./images/go.jpg)
+![go](./images/design/go.jpg)
 
 ## 糟糕的设计
 
@@ -75,7 +75,7 @@ jQuery插件——[jQuery-main-aim](https://github.com/kamens/jQuery-menu-aim)
 
 你见过的糟糕的网页设计？
 
-![tease](./images/tease.jpg)
+![tease](./images/design/tease.jpg)
 
 ## 前端设计基本原则
 

@@ -5,7 +5,7 @@ HTTP协议是 Hyper Text Transfer Protocol (超文本传输协议) 的缩写，�
 
 HTTP是一个基于TCP/IP通信协议。
 
-![HTTP flow](./images/http-flow.png)
+![HTTP flow](./images/http/http-flow.png)
 
 ### TCP/IP
 Transmission Control Protocol/Internet Protocol，传输控制协议/因特网互联协议。
@@ -14,13 +14,13 @@ OSI七层与TCP/IP五层网络架构
 
 *OSI: Open System Interconnection 开放式系统互联*
 
-![TCP/IP](./images/tcp-ip.jpg)
+![TCP/IP](./images/http/tcp-ip.jpg)
 
 扩展阅读：[OSI七层与TCP/IP五层网络架构详解](http://network.51cto.com/art/201310/413853.htm)
 
 ### TCP三次握手
 
-![TCP三次握手](./images/handshake.jpg)
+![TCP三次握手](./images/http/handshake.jpg)
 
 *SYN: synchronize 请求同步*
 
@@ -77,7 +77,7 @@ HTTP/2 是一个二进制协议，区别于 HTTP/1.x 基于文本的协议。
 * Message 一个完整的请求或者响应，包含多个 Frame 序列。
 * Frame HTTP/2 通讯中的最小传输单位，至少含有一个 Frame header，能够表示它属于哪一个 Stream。
 
-![http2-stream](./images/http2-stream.png)
+![http2-stream](./images/http/http2-stream.png)
 
 HTTP/2 是源于Google的SPDY协议制定完成的，当时SPDY已经充分证实了它是一个非常好用的方案。
 
@@ -96,15 +96,15 @@ HTTP/2 支持RFC7230中指明的HTPP/1.1的所有语义。这使得可以在不�
 ### 多路复用流Multiplexed stream
 HTTP/2 是一个可以在同一个TCP/IP连接中同时发起多个request，接收多个response的复用协议。多路复用意味著来自很多流的数据包能够混合在一起通过同样连接传输，好比两列不同火车被拆分混合在一起传输，当到达终点时，它们又被拆开组成两列不同的火车。
 
-![http-frame](./images/httpframe.png)
+![http-frame](./images/http/httpframe.png)
 
-![http-frame2](./images/httpframe2.png)
+![http-frame2](./images/http/httpframe2.png)
 
 HTTP/1.x 上如果一个只用一个持久链接，请求只能一个一个顺序请求，为了高效地并行下载资源，浏览器允许我们打开多个TCP会话，但是一个域名下限制6个链接。（待确认）
 
-![baidu-http](./images/baidu-http.png)
+![baidu-http](./images/http/baidu-http.png)
 
-![google-http](./images/google-http.png)
+![google-http](./images/http/google-http.png)
 
 关于 QUIC [https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/](https://ma.ttias.be/googles-quic-protocol-moving-web-tcp-udp/)
 

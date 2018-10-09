@@ -5,7 +5,7 @@ HyperText Transfer Protocol over Secure Socket Layer 的简称。
 
 阅读更多关于[HTTP/1.x vs HTTP/2](./http1-vs-http2.md)
 
-![why](./images/why.jpg)
+![why](./images/https/why.jpg)
 
 安全！安全！安全！
 
@@ -13,7 +13,7 @@ HyperText Transfer Protocol over Secure Socket Layer 的简称。
 
 标准HTTP通信
 
-![communication-http](./images/communication-http.jpg)
+![communication-http](./images/https/communication-http.jpg)
 
 * 窃听风险(eavesdropping) - 第三方可以获知通信内容。窃取密码、个人信息
 * 篡改风险(tampering) - 第三方可以修改通信内容。流量劫持、广告植入
@@ -29,7 +29,7 @@ HyperText Transfer Protocol over Secure Socket Layer 的简称。
 
 ## HTTPS到底干了什么
 
-![https](./images/https.jpg)
+![https](./images/https/https.jpg)
 
 ### SSL or TLS
 
@@ -41,7 +41,7 @@ TLS(Transport Layer Security，传输层安全)。其前身是SSL，它最初的
 
 ### 加密
 
-![encryption](./images/encryption.jpg)
+![encryption](./images/https/encryption.jpg)
 
 扩展阅读[信息安全技术及应用 常规加密技术](https://blog.csdn.net/codeforcer/article/details/51726109)
 
@@ -63,11 +63,11 @@ TLS(Transport Layer Security，传输层安全)。其前身是SSL，它最初的
 
 ### HTTPS通信机制
 
-![communication-https](./images/communication-https.jpg)
+![communication-https](./images/https/communication-https.jpg)
 
 ### SSL证书
 
-![baidu-ssl](./images/baidu-ssl.png)
+![baidu-ssl](./images/https/baidu-ssl.png)
 
 SSL证书是数字证书的一种，类似于驾驶证、护照和营业执照的电子副本。因为配置在服务器上，也称为SSL服务器证书。
 SSL证书就是遵守SSL协议，由受信任的数字证书颁发机构CA(Certificate Authority)，在验证服务器身份后颁发，具有服务器身份验证和数据传输加密功能。
