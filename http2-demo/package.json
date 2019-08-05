@@ -1,0 +1,16 @@
+{
+  "name": "http2-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express-http2": "^4.13.4",
+    "http2": "^3.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix Guo <felix.guo@xplusz.com>",
+  "license": "ISC"
+}

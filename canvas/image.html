@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+    #canvas {
+        background-color: #ccc;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <canvas id="canvas" width="800px" height="400px"></canvas>
+    <div>
+        <button onclick="drawImage()">显示图片</button>
+        <button onclick="drawScaling()">缩放</button>
+        <button onclick="drawSlicing()">切片</button>
+    </div>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var url = 'https://mdn.mozillademos.org/files/5397/rhino.jpg';
+
+        function drawImage() {
+            var img = new Image();
+            img.src = url;
+            img.onload = function() {
+                // ctx.drawImage(img);
+                ctx.drawImage(img,0,0);
+            };
+        }
+        function drawScaling() {
+            var img = new Image();
+            img.src = url;
+            img.onload = function() {
+                ctx.drawImage(img,320,20,200,100);
+            };
+        }
+        function drawSlicing() {
+            var img = new Image();
+            img.src = url;
+            img.onload = function() {
+                ctx.drawImage(img,40,20,100,200,320,160,100,200);
+            };
+        }
+    </script>
+</body>
+</html>
