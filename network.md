@@ -102,6 +102,12 @@ IP协议的主要工作是将数据包发送给最终的目标主机。而包裹
 
 ![ip](./images/network/ip.png)
 
+* IPv4报文
+
+    ![ipv4](./images/network/ipv4.png)
+
+#### 路由表
+
 一般情况下，两台通信的主机并不是通过一条网线直接连接，而是中间经过很多的网络设备。IP数据包要在复杂网络环境下进行传递，必须借助于路由表。
 
 ![route](./images/network/route.png)
